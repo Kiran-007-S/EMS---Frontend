@@ -47,12 +47,8 @@ function Admin() {
           timekeeping, benefits administration and more
         </p>
       </div>
-      <Link to={'/add'}>
-      <a href="w" className="btn btn-primary" style={{ float: "right" }}>
-          Add
-      </a>
-      </Link>
-      <div className="container">
+      
+      <div className="container d-flex">
         <MDBTable align="middle">
           <MDBTableHead>
             <tr>
@@ -95,6 +91,11 @@ function Admin() {
           </MDBTableBody>
           ))}
         </MDBTable>
+        <Link to={'/add'}>
+      <a href="w" className="btn btn-primary" style={{ float: "right" }}>
+          Add
+      </a>
+      </Link>
       </div>
     </div>
   );
